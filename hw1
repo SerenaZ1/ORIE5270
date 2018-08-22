@@ -1,0 +1,34 @@
+What we covered? Why does that matter?
+aws: Use cloud to run codes
+  How to launch an instance
+  chmod octal file – change the permissions of file to octal
+  Public DNS: Address of my computer 
+  
+Linux command:
+
+
+vim command: Fast to edit files
+  gg: go to the first line of the document
+  G: go to the last line of the document
+  number_line G: go to line number
+  p: put (paste) the clipboard after cursor
+  u: undo
+git: version control, save past versions of files and enable people work together
+  generate a new SSH key and Add SSH key to the ssh-agent: can change files remotely
+  git command:
+    git log: review history
+    git checkout -b name_branch commit number: Switches to the specified branch and updates working directory
+    git branch: Lists all local branches in the current repository
+    git clone http://…..: Downloads a project and its entire version history
+    git add file: Snapshots the file in preparation for versioning
+    git commit -m “message”: Records file snapshots permanently in version history
+    git push origin master: Uploads all local branch commits to GitHub
+    git push origin branch_name
+    git pull origin master: Downloads bookmark history and incorporates changes
+github:  a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced scenarios.
+    merge branch at github, delete branch
+shell: run codes for many times parallelly
+python:
+  parser = argparse.ArgumentParser(): parse script's parameters
+  class
+  
