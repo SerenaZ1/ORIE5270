@@ -6,17 +6,34 @@ class Tree(object):
         self.root = root
 
     def get_value_root(self):
+        """
+        Get the value of the root node of a tree
+
+        :return: (int)
+        """
         if self.root is not None:
             return self.root.value
         else:
             return None
 
     def get_height(self, root):
+        """
+        Get the height of the tree
+
+        :param root: Node
+        :return: (int)
+        """
         if root is None:
             return 0
         return max(self.get_height(root.left), self.get_height(root.right)) + 1
 
     def printTree(self, height):
+        """
+        print a tree, use '|' as separate sign
+
+        :param height: (int)
+        :return: list(height x (2 ** height - 1))
+        """
         if self.root is None:
             return
         out_list = []
@@ -84,4 +101,9 @@ class Node(object):
         self.right = right
 
     def get_value(self):
+        """
+        Get node value
+
+        :return: (int)
+        """
         return self.value
