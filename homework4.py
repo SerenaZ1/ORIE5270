@@ -33,7 +33,7 @@ def get_path(idx, start, end):
         last = idx[last]
     if start != end:
         path.append(start)
-    print list(reversed(path))
+    print (list(reversed(path)))
     return list(reversed(path))
 
 def find_negative_cycles(name_txt_file):
@@ -55,7 +55,7 @@ def find_negative_cycles(name_txt_file):
     if has_negative_loop == True:
         get_path(idx, edge[1],edge[1])
     else:
-        print ""
+        print ("")
 
 
 def find_shortest_path(name_txt_file, source, destination):
