@@ -33,4 +33,4 @@ if __name__ == '__main__':
     for i in range(10):
       x = [random.randint(-100, 100) for j in range(n)]
       opt.append(min(fmin_bfgs(rosen, x, fprime=rosen_gradient)))
-    print min(opt)
+    print (min(opt))
