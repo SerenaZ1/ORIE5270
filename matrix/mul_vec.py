@@ -2,8 +2,8 @@ from pyspark import SparkContext
 import numpy as np
 sc = SparkContext.getOrCreate()
 base_path = '/Users/serena/Desktop/cornell_3rd_semester/courses/ORIE5270/hw/'
-A = sc.textFile(base_path+'A').map(lambda l: [float(x) for x in l.split(' ')]).cache()
-v = sc.textFile(base_path+'v').map(lambda l: [float(x) for x in l.split(' ')]).cache()
+A = sc.textFile(base_path+'A').map(lambda l: [float(x) for x in l.split(',')]).cache()
+v = sc.textFile(base_path+'v').map(lambda l: [float(x) for x in l.split(',')]).cache()
 
 AwithIdx = A.zipWithIndex()
 mat_A = AwithIdx.map(lambda x:(x[1],x[0]))\
