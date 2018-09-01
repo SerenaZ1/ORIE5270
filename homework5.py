@@ -1,18 +1,19 @@
 import sys
 from pyspark import SparkConf, SparkContext
 import numpy as np
+import math
 
 
 #data_path = "/Users/serena/Desktop/cornell_3rd_semester/courses/ORIE5270/hw/data.txt"
 #centroids_path = "/Users/serena/Desktop/cornell_3rd_semester/courses/ORIE5270/hw/c1.txt"
 
-dist = float('inf')
+dist = math.inf
 
 conf = SparkConf()
 sc = SparkContext(conf=conf)
 
 def closest_centroid(point,centroids):
-    min_dis = float('inf')
+    min_dis = math.inf
     cluster_id = 0
     for i in range(len(centroids)):
         dis = np.sum((point - centroids[i]) ** 2)
